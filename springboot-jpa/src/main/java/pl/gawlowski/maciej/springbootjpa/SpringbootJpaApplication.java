@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ComponentScan({"pl.gawlowski.maciej.controller", "pl.gawlowski.maciej.service"})
 @SpringBootApplication
-@EntityScan("pl.gawlowski.maciej.model")
+@EntityScan("pl.gawlowski.maciej.domain")
 @EnableJpaRepositories("pl.gawlowski.maciej.service")
 public class SpringbootJpaApplication {
 

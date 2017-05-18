@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.gawlowski.maciej.model.Topic;
+import pl.gawlowski.maciej.domain.Topic;
 import pl.gawlowski.maciej.service.TopicService;
 
 

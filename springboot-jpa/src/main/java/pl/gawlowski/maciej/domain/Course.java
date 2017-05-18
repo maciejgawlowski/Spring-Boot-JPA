@@ -1,23 +1,28 @@
-package pl.gawlowski.maciej.model;
+package pl.gawlowski.maciej.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Topic {
+public class Course {
 	
 	@Id
 	private String id;
 	private String name;
 	private String description;
 	
-	public Topic(){
+	@ManyToOne //wiele kursów do jednego topica
+	private Topic topic;
+	
+	public Course(){
 	}
 	
-	public Topic(String id, String name, String description) {
+	public Course(String id, String name, String description, String topicId) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.topic = new Topic(topicId, "", "");
 	}
 	
 	public String getId() {
@@ -37,6 +42,14 @@ public class Topic {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Topic getTopic() {
+		return topic;
+	}
+
+	public void setTopic(Topic topic) {
+		this.topic = topic;
 	}
 	
 }

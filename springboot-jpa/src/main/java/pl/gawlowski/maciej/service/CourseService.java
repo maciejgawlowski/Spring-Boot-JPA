@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pl.gawlowski.maciej.model.Course;
-import pl.gawlowski.maciej.model.Topic;
+import pl.gawlowski.maciej.domain.Course;
+import pl.gawlowski.maciej.domain.Topic;
 
 @Service
 public class CourseService {

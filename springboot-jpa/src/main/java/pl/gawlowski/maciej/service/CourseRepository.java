@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pl.gawlowski.maciej.model.Course;
+import pl.gawlowski.maciej.domain.Course;
 
 public interface CourseRepository extends CrudRepository<Course, String> { //String to typ primary key (id)
 
